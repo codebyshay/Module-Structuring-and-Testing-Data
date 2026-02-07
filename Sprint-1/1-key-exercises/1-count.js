@@ -1,6 +1,5 @@
 let count = 0;
 
-// Answer
 count = count + 1;
 
 // Line 1 is a variable declaration, creating the count variable with an initial value of 0
