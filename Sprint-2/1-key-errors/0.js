@@ -25,4 +25,17 @@
 
 // New code without the error:
 
+// 0.js — fully fixed version
+function capitalise(str) {
+  if (!str) return str; // handles empty string
+  return str[0].toUpperCase() + str.slice(1);
+}
+
+// Test it
+console.log(capitalise("hello")); // should print "Hello"
+console.log(capitalise("world")); // should print "World"
+console.log(capitalise(""));      // should print ""
+
+
+
 
