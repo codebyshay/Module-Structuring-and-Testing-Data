@@ -40,4 +40,4 @@ console.log(`The last digit of 806 is ${getLastDigit(806)}`);
 
 // This program should tell the user the last digit of each number.
 // Explain why getLastDigit is not working properly - correct the problem
-// The funtion did not accept a parameter. It was a fixed variable (num = 103), so it always returned the last digit of 103.
+// The function did not accept a parameter. It was a fixed variable (num = 103), so it always returned the last digit of 103.
