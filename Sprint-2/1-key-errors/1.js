@@ -1,9 +1,9 @@
 // Predict and explain first...
-
 // Why will an error occur when this program runs?
-// =============> write your prediction here
+// I predict an error will occur when this program runs because the variable 'decimalNumber' is already declared inside the function 'convertToPercentage' and cannot be redeclared.
 
 // Try playing computer with the example to work out what is going on
+// When the 'function convertToPercentage(decimalNumber)' is created, Javascript already creates a variable called decimalNumber. then, inside the function, 'const decimalNumber = 0.5' tries to create another variable with the same name. This casues a syntax error because you cannot declare two variables with the same name in the same scope. 
 
 function convertToPercentage(decimalNumber) {
   const decimalNumber = 0.5;
