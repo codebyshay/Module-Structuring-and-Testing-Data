@@ -1,13 +1,13 @@
-const movieLength = 8784; // length of movie in seconds
+//const movieLength = 8784; // length of movie in seconds
 
-const remainingSeconds = movieLength % 60;
-const totalMinutes = (movieLength - remainingSeconds) / 60;
+//const remainingSeconds = movieLength % 60;
+//const totalMinutes = (movieLength - remainingSeconds) / 60;
 
-const remainingMinutes = totalMinutes % 60;
-const totalHours = (totalMinutes - remainingMinutes) / 60;
+//const remainingMinutes = totalMinutes % 60;
+//const totalHours = (totalMinutes - remainingMinutes) / 60;
 
-const result = `${totalHours}:${remainingMinutes}:${remainingSeconds}`;
-console.log(result);
+//const result = `${totalHours}:${remainingMinutes}:${remainingSeconds}`;
+//console.log(result);
 
 // For the piece of code above, read the code and then answer the following questions
 
@@ -51,3 +51,19 @@ console.log(result);
 // f) Try experimenting with different values of movieLength. Will this code work for all values of movieLength? Explain your answer
 
 // This code will work for all positive integer values of movieLength. It will correctly calculate the hours, minutes and seconds for any length of movie. However, if movieLength is negative or not an integer, the code may not work as intended. For example, if movieLength is -100, the calculations will not make sense in the context of a movie length. If movieLength is a decimal, it may also cause issues with the calculations.
+
+const movieLength = 65;
+
+const remainingSeconds = movieLength % 60;
+const totalMinutes = (movieLength - remainingSeconds) / 60;
+
+const remainingMinutes = totalMinutes % 60;
+const totalHours = (totalMinutes - remainingMinutes) / 60;
+
+const formattedHours = String(totalHours).padStart(2, "0");
+const formattedMinutes = String(remainingMinutes).padStart(2, "0");
+const formattedSeconds = String(remainingSeconds).padStart(2, "0");
+
+const movieDurationString = `${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+
+console.log(movieDurationString); // 00:01:05
