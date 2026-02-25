@@ -14,3 +14,24 @@
 // You will need to come up with an appropriate name for the function
 // Use the MDN string documentation to help you find a solution
 // This might help https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
+
+// NOTES: 
+// "hello there" should become "HELLO_THERE"
+// I need to turn all letters into CAPITALS and replace the space " " with underscore "-"
+
+// From the MDN documentation:
+// I can use the toUpperCase() to turn the tring into all CAPS.
+// I can use the replaceAll() to replace all the spaces with underscores.
+
+// Good function name:
+// toUpperSnakeCase - this name is decriptive and indicates that the function will convert a string to upper snake case.
+
+function toUpperSnakeCase(str) {
+    return str.toUpperCase().replaceAll(" ", "_");
+}
+
+console.log(toUpperSnakeCase("hello there"));
+// HELLO_THERE
+
+console.log(toUpperSnakeCase("lord of the rings"));
+// LORD_OF_THE_RINGS
