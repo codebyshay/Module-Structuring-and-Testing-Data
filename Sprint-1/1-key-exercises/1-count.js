@@ -6,3 +6,5 @@ count = count + 1;
 // Describe what line 3 is doing, in particular focus on what = is doing
 // This line (line 3), is updating the value of the count variable. The = operator is an 
 // assignment operator which assigns the value on the right (count + 1) to the variable on the left (count). 
+// count = count + 1; This operation is called increment.
+// An increment means increasing the value of a variable by 1.
