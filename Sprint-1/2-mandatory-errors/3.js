@@ -18,3 +18,4 @@ console.log(last4Digits);
 
 // After running the code, I got the output "4213", which is the last 4 digits of the card number.
 // This is what i expected.
+//testing
