@@ -9,7 +9,8 @@
 //console.log(`The sum of 10 and 32 is ${sum(10, 32)}`);
 
 // Write your explanation here
-// When JavaScript sees the 'return' statement, it immediately stopd the function. 
+// When JavaScript sees the 'return' statement, it immediately stops the function. 
+// This is called terminating the function.
 // It does NOT continue to the next line.
 // So this part, 'a+b;' never runs. To return the sum of a and b, we need to put it 
 // on the same line as the return.
