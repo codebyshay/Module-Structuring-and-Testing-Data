@@ -48,10 +48,42 @@ function formatAs12HourClock(time) {
 }
 
 //testing the function with various inputs.
-console.log(formatAs12HourClock("08:00")); // 08:00 am
-console.log(formatAs12HourClock("23:00")); // 11:00 pm
-console.log(formatAs12HourClock("00:30")); // 12:30 am
-console.log(formatAs12HourClock("12:15")); // 12:15 pm
-console.log(formatAs12HourClock("13:45")); // 01:45 pm
-console.log(formatAs12HourClock("11:59")); // 11:59 am
-console.log(formatAs12HourClock("12:00")); // 12:00 pm
+//console.log(formatAs12HourClock("08:00")); // 08:00 am
+//console.log(formatAs12HourClock("23:00")); // 11:00 pm
+//console.log(formatAs12HourClock("00:30")); // 12:30 am
+//console.log(formatAs12HourClock("12:15")); // 12:15 pm
+//console.log(formatAs12HourClock("13:45")); // 01:45 pm
+//console.log(formatAs12HourClock("11:59")); // 11:59 am
+//console.log(formatAs12HourClock("12:00")); // 12:00 pm
+
+import { formatAs12HourClock } from "./formatAs12HourClock";
+
+describe("formatAs12HourClock", () => {
+test("formats morning time correctly", () => {
+expect(formatAs12HourClock("08:00")).toBe("08:00 am");
+});
+
+test("formats evening time correctly", () => {
+expect(formatAs12HourClock("23:00")).toBe("11:00 pm");
+});
+
+test("formats midnight correctly", () => {
+expect(formatAs12HourClock("00:30")).toBe("12:30 am");
+});
+
+test("formats noon correctly", () => {
+expect(formatAs12HourClock("12:15")).toBe("12:15 pm");
+});
+
+test("formats afternoon time correctly", () => {
+expect(formatAs12HourClock("13:45")).toBe("01:45 pm");
+});
+
+test("formats late morning correctly", () => {
+expect(formatAs12HourClock("11:59")).toBe("11:59 am");
+});
+
+test("formats exactly noon", () => {
+expect(formatAs12HourClock("12:00")).toBe("12:00 pm");
+});
+});
